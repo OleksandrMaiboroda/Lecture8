@@ -32,23 +32,6 @@
 
         console.log(even(exampleArray));
 
-        ////////////////////////////////// Палиндром: 
-
-        exampleNumber = prompt('Введите число');
-
-        function isPalindrome(someNumber) {
-            
-            someNumber = someNumber.toString();
-            let palindrome = '';
-            
-            for (let i = (someNumber.length - 1); i >= 0; i--) {
-                palindrome += someNumber[i];
-            }
-
-            return (palindrome === someNumber);
-        }
-
-        console.log(isPalindrome(exampleNumber));
 
         ///////////////////////////////////// Многомерный: 
 
@@ -58,20 +41,7 @@
             [89, 58, 456, 789, 33]
         ];
 
-        function flat(someArray) {
-
-            let result = [];
-
-            someArray.forEach(function(element) {
-                element.forEach(function(element) {
-                    result.push(element);
-                })
-            });
-
-            return result;
-        }
-
-        console.log(flat(multiArray));
+        console.log(multiArray.toString().split(',').map(Number));
     </script>
 </body>
 </html>
